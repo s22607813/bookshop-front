@@ -40,7 +40,8 @@ b-container(fluid)#products.text-dark.px-5
     b-col(cols="12" sm="6" md="4" xl="2" v-for="product in productsMagazine" :key="product._id").mb-3
       router-link(:to="'/book/'+ product._id")
         ProductCard(:product="product")
-  b-col(cols="12").text-right
+  b-row
+    b-col(cols="12").text-right
       router-link(to="/productsmagazine").h5.brown
         span More &nbsp
         b-icon(icon="play-fill")
@@ -54,7 +55,8 @@ b-container(fluid)#products.text-dark.px-5
     b-col(cols="12" sm="6" md="4" xl="2" v-for="product in productsTextbook" :key="product._id").mb-3
       router-link(:to="'/book/'+ product._id")
         ProductCard(:product="product")
-  b-col(cols="12").text-right
+  b-row
+    b-col(cols="12").text-right
       router-link(to="/productstextbook").h5.brown
         span More &nbsp
         b-icon(icon="play-fill")
@@ -68,7 +70,8 @@ b-container(fluid)#products.text-dark.px-5
     b-col(cols="12" sm="6" md="4" xl="2" v-for="product in productsOther" :key="product._id").mb-3
       router-link(:to="'/book/'+ product._id")
         ProductCard(:product="product")
-  b-col(cols="12").text-right.mb-4
+  b-row
+    b-col(cols="12").text-right.mb-4
       router-link(to="/productsother").h5.brown
         span More &nbsp
         b-icon(icon="play-fill")
