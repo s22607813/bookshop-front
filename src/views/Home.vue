@@ -10,22 +10,9 @@ b-container(fluid)#home.page
           b-dropdown-item(to='/productsmagazine' exact exact-active-class="active") 雜 誌
           b-dropdown-item(to='/productstextbook' exact exact-active-class="active") 教 科 書
           b-dropdown-item(to='/productsother' exact exact-active-class="active") 其 他
-      //-
-      //- span.text-center.text-dark.font-weight-bold.d-none.d-md-block.mb-2 書籍類別
-      //- .btn.px-0
-      //-   b-btn(to='/productsLiterature'  variant="")
-      //-     span 文 學
-      //- hr.hr_column.d-block.d-md-none
-      //- .btn.px-0
-      //-   b-btn(to='/productsmagazine' exact exact-active-class="active" variant="") 雜 誌
-      //- hr.hr_column.d-block.d-md-none
-      //- .btn.px-0
-      //-   b-btn(to='/productstextbook' exact exact-active-class="active" variant="") 教 科 書
-      //- hr.hr_column.d-block.d-md-none
-      //- .btn.px-0
-      //-   b-btn(to='/productsother' exact exact-active-class="active" variant="") 其 他
   b-row.down.offset-md-2
-    router-view
+    vue-page-transition(name="fade-in-right").w-100
+      router-view
 </template>
 
 <script>
