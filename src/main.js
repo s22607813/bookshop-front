@@ -11,6 +11,7 @@ import './style/app.styl'
 import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import ImgInputer from 'vue-img-inputer'
+import VuePageTransition from 'vue-page-transition'
 import 'vue-img-inputer/dist/index.css'
 import './plugins/axios.js'
 
@@ -24,6 +25,7 @@ Vue.use(VueGtag, {
 
 Vue.use(VueSweetalert2)
 Vue.component('ImgInputer', ImgInputer)
+Vue.use(VuePageTransition)
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
