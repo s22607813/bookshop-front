@@ -97,8 +97,8 @@ export default {
         }
       } else {
         this.$swal({
-          icon: 'error',
-          title: '錯誤',
+          icon: 'warning',
+          title: '結帳',
           text: '至少捐過一本書並通過審核後才能下單'
         })
       }
