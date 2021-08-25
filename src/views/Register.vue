@@ -114,7 +114,7 @@ export default {
         this.$router.push('/')
       } catch (error) {
         this.$swal({
-          icon: 'erro',
+          icon: 'error',
           title: '失敗',
           text: '註冊失敗'
         })
