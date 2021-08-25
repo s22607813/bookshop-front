@@ -69,7 +69,13 @@ export default {
       }
     },
     async checkout () {
-      if (this.donateAmount > 0) {
+      if (this.cart.length === 0) {
+        this.$swal({
+          icon: 'error',
+          title: '錯誤',
+          text: '請放入商品再結帳'
+        })
+      } else if (this.donateAmount > 0) {
         try {
           await this.axios.post('/orders', {}, {
             headers: {
