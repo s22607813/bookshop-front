@@ -11,17 +11,18 @@ body
   box-shadow 0px 0px 10px #332c18
   z-index 99
 
-// #shoppingcart
-//   position absolute
-//   right 0
-//   bottom 20px
-//   width 30px
-//   height 20px
-//   line-height 20px
-//   color white
-//   text-align center
-//   border-radius 10px
-//   background red
+#shoppingcart
+  position absolute
+  left -10px
+  bottom 20px
+  width 20px
+  height 20px
+  line-height 20px
+  color white
+  text-align center
+  border-radius 50%
+  background red
+  font-size  .9rem
 
 // container 內容頁
 .sidebar
@@ -139,6 +140,10 @@ textarea
   
 .aboutHeight
   min-height 30vh
+
+.button-size
+  font-size 1rem
+
 //sm
 @media (min-width: 576px) {
   .card-head img {
@@ -159,6 +164,10 @@ textarea
 
   .sidebar {
     height 100%
+  }
+  
+  .button-size {
+    font-size 1.2rem
   }
 
   #admin_sidebar {
@@ -189,4 +198,11 @@ textarea
     margin 0 8px
   }
 
+  #shoppingcart {
+    left 0
+  }
+
+  .button-size {
+    font-size 1.5rem
+  }
 }
