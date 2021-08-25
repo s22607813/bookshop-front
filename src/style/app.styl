@@ -1,0 +1,192 @@
+html,
+body
+  height 100%
+
+#app
+  background white
+
+// header 導覽列
+#header
+  background #807149
+  box-shadow 0px 0px 10px #332c18
+  z-index 99
+
+// #shoppingcart
+//   position absolute
+//   right 0
+//   bottom 20px
+//   width 30px
+//   height 20px
+//   line-height 20px
+//   color white
+//   text-align center
+//   border-radius 10px
+//   background red
+
+// container 內容頁
+.sidebar
+  height 60px
+  background #131a33
+  z-index 98
+  
+.btn
+  width 90%
+  font-size 0.8rem
+
+.page
+  position relative
+  top 98px
+  min-height 100vh
+
+#register
+#login
+  position relative
+  top 98px
+  min-height calc(100vh - 98px)
+
+.down
+  background white
+  position relative
+  top 60px
+
+.brown
+  color #ccba89
+
+.blue131a33
+  color #131a33
+
+hr
+  background: #ccba89
+
+#footer
+  color white
+  background: #807149
+  position relative
+  z-index 99
+  top 158px
+
+#text_cart
+  font-size 1.1rem
+
+a
+  text-decoration none !important
+
+.title
+  color #495580
+  border-left 10px solid #495580
+  padding-left 10px
+
+#cart table tr td
+  line-height 99.5px
+  &:nth-child(4)
+    text-align center
+
+#adminproductslist table tr td
+    line-height 99.5px
+    &:nth-child(6)
+      text-align center
+
+#admindonatelist table tr td
+  line-height 99.5px
+  &:nth-child(6)
+      text-align center
+  &:nth-child(7)
+      text-align center
+
+#userdonatelist table tr td
+  line-height 99.5px
+  &:nth-child(5)
+    text-align center
+
+.card:hover
+  box-shadow 0 0 10px #495580
+
+.hr_column
+  width 1px
+  height 33px
+  background #807149
+
+.dropdown-menu
+  width 100%
+
+.dropdown-item
+  text-align center
+
+.box-shadow
+  box-shadow 0 0 5px #495580
+  border-radius 10px
+
+.card-head img
+  max-width 90%
+  height 50vh
+  
+.card-subtitle
+.card-title
+  overflow:hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+textarea
+  letter-spacing: 1px
+  border-radius: 5px;
+  border: 1px solid #495580
+  min-height 100px
+
+.colorbdbfc1
+  color #bdbfc1
+  &:hover
+    color white
+  
+.aboutHeight
+  min-height 30vh
+//sm
+@media (min-width: 576px) {
+  .card-head img {
+    max-width 80%
+    height 30vh
+  }
+}
+
+// md
+@media (min-width: 768px) {
+  .down {
+    top 0
+  }
+
+  #footer {
+    top 98px
+  }
+
+  .sidebar {
+    height 100%
+  }
+
+  #admin_sidebar {
+    height 100%
+    background #f1dba6
+  }
+  
+  .btn {
+    font-size 1rem
+  }
+  
+  .book_img {
+    border-right 1px solid #dee2e6
+  }
+
+  .card-head img {
+    max-width 75%
+    height 20vh
+  }
+}
+
+// lg
+@media (min-width: 992px) {
+  #line {
+    width 1px
+    height 20px
+    background white
+    margin 0 8px
+  }
+
+}
