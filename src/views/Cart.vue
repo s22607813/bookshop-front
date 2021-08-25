@@ -14,8 +14,10 @@ b-container(fluid)#cart.page.px-5
           b-btn.w-50(variant="danger" @click="delProduct(data.index)" size="lg")
             b-icon(icon="trash-fill")
             |  刪除商品
-    b-col(cols="12").mb-4.d-flex.justify-content-center
-      b-btn(variant='success' @click="checkout" size="lg").w-50
+  hr.mb-5
+  b-row
+    b-col(cols="12").mb-4.d-flex.justify-content-end
+      b-btn(variant='success' @click="checkout" style="height: 10vh; line-height: 10vh").button-size.w-25.p-0
         b-icon(icon="cash")
         |  結帳
 </template>
