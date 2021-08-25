@@ -11,7 +11,7 @@ b-container(fluid)#home.page
           b-dropdown-item(to='/productstextbook' exact exact-active-class="active") 教 科 書
           b-dropdown-item(to='/productsother' exact exact-active-class="active") 其 他
   b-row.down.offset-md-2
-    vue-page-transition(name="fade-in-right").w-100
+    vue-page-transition(name="fade-in-left").w-100
       router-view
 </template>
 
