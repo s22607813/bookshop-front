@@ -1,5 +1,5 @@
 <template lang="pug">
-.card.product-card.mt-2.mb-1.py-3
+.card(:title="product.name").product-card.mt-2.mb-1.py-3
   .card-head.text-center
     img(:src="product.image")
   .card-body.pb-1
