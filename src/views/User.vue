@@ -7,7 +7,8 @@ b-container(fluid)#user.page
       b-btn.btn(to='/user/userdonatelist' exact exact-active-class="active" variant="" size="lg").mx-2.mt-md-3.px-0 捐 贈 紀 錄
       b-btn.btn(to='/user/userboughtlist' exact exact-active-class="active" variant="" size="lg").mx-2.mt-md-3.px-0 收 購 紀 錄
   b-row.down.offset-md-2
-    router-view
+    vue-page-transition(name="fade-in-left").w-100
+      router-view
 </template>
 
 <script>
