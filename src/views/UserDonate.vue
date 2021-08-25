@@ -49,7 +49,7 @@ b-container(fluid)#userdonate.text-dark.px-5
             v-model="form.description"
             type="text"
             required
-            placeholder="請輸入書本說明"
+            placeholder="請簡單說明書本狀況，例如：狀況良好、五成新．．．"
             :state="state.description"
           )
         //- img
