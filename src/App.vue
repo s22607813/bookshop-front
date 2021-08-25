@@ -23,7 +23,8 @@
           #line.d-none.d-lg-block
           b-nav-item(v-if="user.isLogin" @click="logout") 登出
           b-nav-item(v-if="!user.isLogin" to='/register') 註冊
-  router-view
+  vue-page-transition(name="fade-in-up")
+    router-view
   #footer
     b-container(fluid).px-5.pt-2
       b-row.px-3
