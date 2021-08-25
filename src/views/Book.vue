@@ -25,7 +25,7 @@ b-container(fluid)#book.text-dark.px-5
   hr
   b-row
     b-col(cols="12").mb-4.d-flex.justify-content-end
-      b-button(href='#' variant='success' @click="addCart" v-if="this.$store.state.user.role !== 1"  style="height: 10vh; line-height: 10vh").button-size.w-50.mt-3
+      b-button(href='#' variant='success' @click="addCart" v-if="this.$store.state.user.role !== 1"  style="height: 10vh; line-height: 10vh").button-size.w-50.mt-3.p-0
         #text_cart
         b-icon(icon="bag-check-fill")
         |  放入購物車
