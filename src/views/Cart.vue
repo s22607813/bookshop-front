@@ -71,9 +71,9 @@ export default {
     async checkout () {
       if (this.cart.length === 0) {
         this.$swal({
-          icon: 'error',
-          title: '錯誤',
-          text: '請放入商品再結帳'
+          icon: 'warning',
+          title: '結帳',
+          text: '請先放入商品再結帳'
         })
       } else if (this.donateAmount > 0) {
         try {
